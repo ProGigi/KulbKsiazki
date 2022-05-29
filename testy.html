@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.I.P.A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Lobster&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Lobster&family=Roboto:wght@900&display=swap"
+        rel="stylesheet">
+
+
+    <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bars">
+        <i class="fas fa-bars"></i>
+    </div>
+    <nav>
+
+        <div class="nav clirfix">
+            <ul>
+                <li><a href="index.php"> <i class="fas fa-book"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-book-medical"></i> Propozycje</a></li>
+                <li><a href="readIt.php"><i class="fas fa-bookmark"></i> Przeczytane</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Członkowie</a></li>
+                <li><a href="#"><i class="fas fa-random"></i> Losuj</a></li>
+                <li><a href="addBook.php"><i class="fas fa-journal-whills"></i> Dodaj</a></li>
+            </ul>
+            <div class="close"><i class="far fa-times-circle"></i></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="name1">Czyta i Próbuje Analizować</div>
+            <div class="name2">Klub Książki</div>
+        </header>
+
+
+
+        <main calss="mein">
+
+            <form action="readNow.php?title=dsadasdasdas method=post">
+                <article class="popUp">
+                    <form action="readNow.php?active" method="post">
+                        <h1>Teraz czytamy</h1>
+                        <span name="title">' . $ReadNowTitle . '</span>
+                        <span class="small" name="author">' . $ReadNowAuthor . '</span>
+                        <div class="imgBook" name="img"><img src="' . $ReadNowImg . '" alt=""></div>
+                        <label for="bookRating">Na ile &#127825 oceniasz</label>
+                        <input type="number" name="bookRating" id="">
+                        <input type="submit" value="Ptzrczytane">
+                        <div class="close"><i class="far fa-times-circle"></i></div>
+                    </form>
+                </article>
+                <article class="suggestions">
+                    <input type="checkbox" name="" id="" value="ddd">
+                    <label for="ddd">ddd</label>
+                </article>
+
+                <article class="members">
+                    <h1>Członkowie</h1>
+                    <img src="img/paulina.jpg" alt="">
+                    <p>Paulina vel. Paulinson Biernack - Jedna z głównych pomysłodawczyń klubu. Samozwańczy prezes.
+                        Organizatorka spotkań, dbająca o dobrą atmosferę. Taka klubowa Babcia.</p>
+                    <img src="img/ola.jpg" alt="">
+                    <p>Aleksandra vel. Nerka Zakrzewska - Jedna z głównych pomysłodawczyń klubu. Nie ma dla niej rzeczy
+                        niemożliwych przeszczepiła by nawet nerkę o zerowym współczynniku filtracji. Jakby klubowa
+                        Babcia miały by mieć Dziadka to właśnie Ole.</p>
+                    <img src="img/majka.jpg" alt="">
+                    <p>Marta vel. Majk Marcheffka Majkowska - Człowiek opozycja. Gdyby weszła do rządu pokazała by
+                        teraźniejszej opozycji że rzetelnymi argumentami można zdziałać więcej. UWAGA!!!!!! Przekona cię
+                        że “Duma i uprzedzenie” jest fajna.</p>
+                    <img src="img/bartek.jpg" alt="">
+                    <p>Bartłomiej vel. Bieżnik Garbacz - Bo przyjęcie bez bieżnika to nie przyjęcie. Gustowny
+                        młodzieniec o otwartej głowie z poczuciem humoru. Pasjonują go cmentarze i ozdabianie
+                        stołów.</p>
+                    <img src="img/kinga mucha.jpg" alt="">
+                    <p>Kinga vel.(z racji tego że Marta ma tyle przezwisk to na Kingę nie starczyło) Mucha -
+                        Osoba posiadająca ciekawe spostrzeżenia (nie lubi kwiatu jabłoni ← shame) Jakby Majka
+                        miała tworzyć koalicję to właśnie z Kingą. Lubi ludzi z talentami do disiaj nie wiemy co
+                        robi w naszych szeregach.</p>
+                    <img src="img/gerard.jpg" alt="">
+                    <p>Gerard vel.(ta sama sytuacja co z Kingą DZIĘKI Majka) Jaworski - Tak on na prawde ma
+                        tak na imię.</p>
+                </article>
+                <span></span>
+
+
+        </main>
+
+
+
+
+        <footer class="footer">
+            <p>"Z miesiąca nam miesiąc bardziej oczytani"</p>
+        </footer>
+
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
